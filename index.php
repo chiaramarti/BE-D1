@@ -19,7 +19,7 @@ echo "La data di oggi è: $dataOggi";
 date_default_timezone_set('Europe/Rome');
 
 // Array per convertire il nome del giorno e del mese in italiano
-$giorniSettimana = array(
+$giorniSettimana = [
     'Sunday' => 'Domenica',
     'Monday' => 'Lunedì',
     'Tuesday' => 'Martedì',
@@ -27,9 +27,9 @@ $giorniSettimana = array(
     'Thursday' => 'Giovedì',
     'Friday' => 'Venerdì',
     'Saturday' => 'Sabato'
-);
+];
 
-$mesiItaliani = array(
+$mesiItaliani = [
     'January' => 'gennaio',
     'February' => 'febbraio',
     'March' => 'marzo',
@@ -42,7 +42,7 @@ $mesiItaliani = array(
     'October' => 'ottobre',
     'November' => 'novembre',
     'December' => 'dicembre'
-);
+];
 
 // Ottenere la data di oggi con il nome del giorno e del mese in italiano
 $oggi = date('l, j F Y');
@@ -60,11 +60,11 @@ echo '<br> <br>';
 echo '2) Squadre di calcio <br>';
 
 // Array delle squadre di Serie A e delle relative formazioni
-$squadreSerieA = array(
+$squadreSerieA = [
     "Juventus" => array("Buffon", "Chiellini", "Bonucci", "De Ligt", "Cuadrado", "Chiesa", "Arthur", "Rabiot", "Bentancur", "Dybala", "Ronaldo"),
     "Inter" => array("Handanovic", "Skriniar", "De Vrij", "Bastoni", "Hakimi", "Brozovic", "Barella", "Perisic", "Eriksen", "Lautaro", "Martinez"),
     "Milan" => array("Donnarumma", "Calabria", "Kjaer", "Tomori", "Hernandez", "Kessie", "Bennacer", "Saelemaekers", "Calhanoglu", "Rebic", "Ibrahimovic"),
-);
+];
 
 // Stampare i dati utilizzando cicli
 foreach ($squadreSerieA as $squadra => $formazione) {
